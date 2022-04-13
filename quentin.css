@@ -1,0 +1,328 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  -webkit-perspective: 300px;
+  background-image: url("https://cdn.glitch.global/d7d5679c-c45b-4526-a1b5-1a08bf17f34c/bg.svg?v=1649671550261");
+  background-size: 100px;
+  background-repeat: repeat;
+  #myelement {
+    position: relative;
+    overflow: hidden;
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+  color: #ffffff;
+  position: fixed;
+  margin: 0;
+  cursor: url("https://cdn.glitch.global/d7d5679c-c45b-4526-a1b5-1a08bf17f34c/quentinmus.png?v=1649787345813"),
+    auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+  font-size: 0.85rem;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Pareto", Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: "Pareto";
+  src: url("https://cdn.glitch.global/d7d5679c-c45b-4526-a1b5-1a08bf17f34c/ABCParetoEdu-Rectangular.woff2?v=1649675621866");
+  /*The link to the CDN appears when you click on your file in assets > copy*/
+}
+.logo {
+  position: absolute;
+  height: 5vh;
+  background: transparent;
+  display: block;
+  margin-left: 11px;
+  margin-top: 11px;
+}
+
+.rubrik {
+  height: 75px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: url("https://cdn.glitch.global/d7d5679c-c45b-4526-a1b5-1a08bf17f34c/maher.png?v=1649842193373")
+    auto;
+}
+
+a:hover {
+  position: relative;
+  text-decoration: underline;
+  cursor: url("https://cdn.glitch.global/d7d5679c-c45b-4526-a1b5-1a08bf17f34c/maher.png?v=1649842193373")
+    auto;
+}
+
+#lovie {
+  position: relative;
+}
+#lovie img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+#sxsw1 {
+  position: absolute;
+  margin-left: -560px;
+  margin-top: -57px;
+  width: 200px;
+  height: 114px;
+  left: 50%;
+  top: 46%;
+}
+
+#sxsw2 {
+  position: absolute;
+  margin-left: 360px;
+  margin-top: -57px;
+  width: 200px;
+  height: 114px;
+  left: 50%;
+  top: 46%;
+}
+
+#audiocontainer {
+  position: absolute;
+  position: left;
+  width: 854px;
+  height: 480px;
+  margin-left: -447px;
+  margin-top: -270px;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+  z-index: 231;
+}
+#quentincontainer {
+  position: absolute;
+  position: left;
+  width: 854px;
+  height: 480px;
+  margin-left: -447px;
+  margin-top: -270px;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+  background: black;
+  border-spacing: 20px;
+  border-top: 20px solid pink;
+  border-right: 20px solid pink;
+  border-bottom: 20px solid purple;
+  border-left: 20px solid purple;
+}
+
+#loader {
+  position: absolute;
+  width: 500px;
+  height: 260px;
+  left: 180px;
+  top: 205px;
+  text-align: center;
+  z-index: 200;
+  font-size: 50px;
+  color: #ffffff;
+}
+#header {
+  position: absolute;
+  color: #555555;
+}
+#introtext {
+  position: absolute;
+  width: 640px;
+  height: 60px;
+  left: 0px;
+  top: 226px;
+  text-align: center;
+  z-index: 220;
+  font-size: 30px;
+  color: #ffffff;
+  display: none;
+  opacity: 0;
+}
+#allimages {
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+.quentins {
+  position: absolute;
+}
+
+/*#reverse1 {
+	left: 125538;
+}
+
+#reverse2 {
+	left: 83692px;
+}*/
+
+#reverse4 {
+  left: 0px;
+}
+
+#reverse3 {
+  left: 41846px;
+}
+
+#reverse2 {
+  left: 83692px;
+}
+
+#reverse1 {
+  left: 125538px;
+}
+
+a: {
+  color: #3f6178;
+  text-decoration: none;
+}
+a: hover {
+  text-decoration: underline;
+}
+
+.footer {
+  position: fixed;
+  bottom: 5px;
+  width: 120px;
+  left: 50%;
+  margin-left: -60px;
+  color: #242a2c;
+  text-align: center;
+  font-size: 10px;
+  z-index: 100;
+}
+
+.social {
+  margin-bottom: 0px;
+}
+
+#quentin {
+  height: 100%;
+  font-size: 15px;
+}
+
+#transparent1 {
+  position: absolute;
+  left: 0px;
+  width: 5vh;
+  height: 100%;
+  margin-left: 250px;
+}
+#transparent2 {
+  position: absolute;
+  left: 0px;
+  width: 10vh;
+  height: 100%;
+  margin-left: 90px;
+}
+.joints {
+  position: relative;
+  top: 40%;
+}
+.joint1 {
+  position: absolute;
+  top: 40%;
+  margin-left: 55px;
+  transform: rotateY(180deg);
+}
+.joint2 {
+  position: absolute;
+  top: 40%;
+  right: 0px;
+  float: right;
+  margin-right: 55px;
+}
+  .webring {
+  background-color: #ffcba4;
+  z-index: 1000000;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+    position: center;
+  bottom: 0;
+  width: 100%;
+  color: green;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.webring a {
+  color: red;
+  border-bottom: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.webringarrow a {
+  color: red;
+  border-bottom: 0;
+  font-size: 3vw;
+  text-align: center;
+  text-decoration: none;
+}
+
+.webringarrow,
+.webringinfo {
+  position: relative;
+  padding: 1.5vw;
+  position: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: transparent;
+  color: #ffffff;
+  cursor: help;
+  position: fixed;
+  bottom: 0px;
+  color: #ffffff;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+  color: #ffffff;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  color: #ffffff;
+  position: center;
+  position: fixed;
+  bottom: 0px;
+  overflow: hidden;
+}
+
+.button {
+  color: #ffffff;
+}
