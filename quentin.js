@@ -1,3 +1,4 @@
+//thank you eelslap.com and http://actnormal.co/ for the script!]
 (function (window, $, undefined) {
   var app = window.Quentins || (window.Quentins = {});
   var $window = $(window);
@@ -55,7 +56,7 @@
     );
     $("#reverse4").attr(
       "src",
-      "https://cdn.glitch.global/d7d5679c-c45b-4526-a1b5-1a08bf17f34c/reverse4.jpg?v=1649690742613"
+      "https://cdn.glitch.global/d7d5679c-c45b-4526-a1b5-1a08bf17f34c/reversequentin5.jpg?v=1649803268898"
     );
     //$("#reverse4").attr("src", "images/new3.jpg");
 
@@ -97,35 +98,33 @@
     }
   };
 
-	var startSlap = function() {
-		browserWidth = $(window).width();
+  var startSlap = function () {
+    browserWidth = $(window).width();
 
-		setInterval(function() {
-			currentPosition += (targetPosition - currentPosition) / 4;
-			var currentSlap = currentPosition / 854 * 194;
-			currentSlap = Math.min(194, Math.max(0,currentSlap));
-			var pos = Math.round(currentSlap) * -854;
+    setInterval(function () {
+      currentPosition += (targetPosition - currentPosition) / 4;
+      var currentSlap = (currentPosition / 854) * 194;
+      currentSlap = Math.min(194, Math.max(0, currentSlap));
+      var pos = Math.round(currentSlap) * -854;
 
-			$("#allimages").css("left", pos);
-		}, 30);
+      $("#allimages").css("left", pos);
+    }, 30);
 
-		$("body").bind('mousemove', function(e) {
-			// $('#status').html(e.pageX +', '+ e.pageY);
-			targetPosition = 854 - Math.max(0, Math.min(854, e.pageX - $('#eelcontainer').offset().left));
-			//targetPosition = browserWidth - (e.pageX - $('#eelcontainer').offset().left);
-			// console.log(targetPosition);
-      
-      
-      
-      
+    $("body").bind("mousemove", function (e) {
+      // $('#status').html(e.pageX +', '+ e.pageY);
+      targetPosition =
+        854 -
+        Math.max(
+          0,
+          Math.min(854, e.pageX - $("#quentincontainer").offset().left)
+        );
+      //targetPosition = browserWidth - (e.pageX - $('#quentincontainer').offset().left);
+      // console.log(targetPosition);
+
       // https://www.w3schools.com/tags/av_prop_currenttime.asp
-      
+
       // ON mouse move, make sure audio is playing, and set Current Time
-      
-      
-      
-      
-      
+
       $("#bugger").html(targetPosition);
     });
 
@@ -148,7 +147,6 @@
     el.setAttribute("ongesturestart", "return;");
     return typeof el.ongesturestart === "function";
   };
-
   // On DOM ready
   $(autorun);
 })(this, jQuery);
